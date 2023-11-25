@@ -56,10 +56,11 @@ console.log(Math.floor(Math.random() * 6) + 1);
 // Nums 1 -100
 
 /*
-const FizzBuzz = (num) => {
+const FizzBuzz = () => {
     
     let arr = [];
-
+    let num = 0;
+    while(num <=100){
     if (num % 3 == 0 && num % 5 == 0) {
          arr.push("FizzBuzz")
     } else if(num % 3 == 0) {
@@ -69,14 +70,15 @@ const FizzBuzz = (num) => {
     } else {
         arr.push(num);
     }
-
+    num++;
+}
     return arr;
-
 }
 
-console.log(FizzBuzz(30));
+console.log(FizzBuzz());
 
 */
+
 
 
 
