@@ -24,7 +24,7 @@ console.log(`I am ${fullName}`);
 /*
     BMI = weight(kg)/ height^2(m^2)
 
-*/
+
 
 
 
@@ -37,6 +37,48 @@ const bmiCalculator = (weight, height) => {
 
 
 console.log(bmiCalculator(65,1.8));
+
+*/
+
+
+
+/* Dice roll!
+console.log(Math.floor(Math.random() * 6) + 1);
+*/
+
+
+
+
+// Fizz Buzz
+// If divis by 3 -> "Fizz"
+// If divis by 5 -> "Buzz"
+// If divis by 3 and 5 -> "FizzBuzz"
+// Nums 1 -100
+
+/*
+const FizzBuzz = (num) => {
+    
+    let arr = [];
+
+    if (num % 3 == 0 && num % 5 == 0) {
+         arr.push("FizzBuzz")
+    } else if(num % 3 == 0) {
+        arr.push("Fizz")
+    } else if (num % 5 == 0){
+         arr.push("Buzz")
+    } else {
+        arr.push(num);
+    }
+
+    return arr;
+
+}
+
+console.log(FizzBuzz(30));
+
+*/
+
+
 
 
 
