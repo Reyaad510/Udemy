@@ -93,19 +93,44 @@ document.getElementsByClassName("btn") -> classes you create within html. Gives 
 
 document.getElementById("title").innerHTML; = "Good Bye" gives back a single element not an array. Id should only be to one element
 
-===================================================================
 
+
+
+===================================================================
+"must be set ina  string"
+
+document.querySelector("title").textContent = "Hello";
 document.querySelector("h1") can get by element
+document.querySelector("h1").innerHTML = "<em>Good Bye</em>""
 document.querySelector("#title"); can get by id with pound sign
 document.querySelector("".btn") can get with class with . in front
 document.querySelector("li a"); a hierachial selector
 document.querySelector("li.item");
 document.querySelector("#list a");
 
+
+document.querySelector("a").attributes;
+document.querySelector("a").getAttribute("href");
+document.querySelector("a").setAttribute("href", https://www.bing.com);
+
 document.querySelectorAll("#list .item"); -> sends back array of all that match 
 
 querySelector and querySelectorAll allow for more complex queries, because we are able to specify id, class, element, tag names, and combine them in order to target the exact element we want. Where with getElement is more broad and more difficult to target individual objects without going in to change the HTML
 
+
+
+document.querySelector("button").classList.add("invisible"); to add class to that specific element(Can be used to add diff css)
+document.querySelector("button").classList.remove("invisible");
+document.querySelector("button").classList.toggle("invisible"); -> toggle class on/off
+
+
+*/
+
+/*
+const changeBtnColor = () => {
+
+        document.querySelector("button").style.backgroundColor = "yellow";
+}
 */
 
 
