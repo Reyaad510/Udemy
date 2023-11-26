@@ -80,9 +80,32 @@ console.log(FizzBuzz());
 */
 
 
+// Document Object Model(DOM)
+// Browser load top to bottome so <link rel styles.css> need to be in <head> and <script> need to be before </body> so then it can recognize elements after they been loaded
+// DOM catalogs the web page into individual objects that we can select and manipulate 
 
 
+/*
+document.getElementsByTagName("li") grab all tags with li in an array
+document.getElementsByTagName("li")[1].style.color = "purple" to change color
 
+document.getElementsByClassName("btn") -> classes you create within html. Gives you back an array
 
+document.getElementById("title").innerHTML; = "Good Bye" gives back a single element not an array. Id should only be to one element
+
+===================================================================
+
+document.querySelector("h1") can get by element
+document.querySelector("#title"); can get by id with pound sign
+document.querySelector("".btn") can get with class with . in front
+document.querySelector("li a"); a hierachial selector
+document.querySelector("li.item");
+document.querySelector("#list a");
+
+document.querySelectorAll("#list .item"); -> sends back array of all that match 
+
+querySelector and querySelectorAll allow for more complex queries, because we are able to specify id, class, element, tag names, and combine them in order to target the exact element we want. Where with getElement is more broad and more difficult to target individual objects without going in to change the HTML
+
+*/
 
 
